@@ -9,7 +9,12 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, T5Tokenizer, T5ForConditionalGeneration
+from transformers import (
+    AutoTokenizer,
+    AutoModelForSequenceClassification,
+    T5Tokenizer,
+    T5ForConditionalGeneration
+)
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
